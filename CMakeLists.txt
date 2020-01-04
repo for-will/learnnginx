@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(nginx_1_12_2)
+project(learn_nginx)
 
 set(CMAKE_CXX_STANDARD 14)
 
