@@ -89,33 +89,33 @@ add_executable(nginx
         src/core/ngx_string.h
         src/core/ngx_syslog.c
         src/core/ngx_syslog.h
-#        src/core/ngx_thread_pool.c
-#        src/core/ngx_thread_pool.h
+        #        src/core/ngx_thread_pool.c
+        #        src/core/ngx_thread_pool.h
         src/core/ngx_times.c
         src/core/ngx_times.h
-#        src/event/modules/ngx_devpoll_module.c
-#        src/event/modules/ngx_epoll_module.c
-#        src/event/modules/ngx_eventport_module.c
+        #        src/event/modules/ngx_devpoll_module.c
+        #        src/event/modules/ngx_epoll_module.c
+        #        src/event/modules/ngx_eventport_module.c
         src/event/modules/ngx_kqueue_module.c
-#        src/event/modules/ngx_poll_module.c
-#        src/event/modules/ngx_select_module.c
-#        src/event/modules/ngx_win32_select_module.c
+        #        src/event/modules/ngx_poll_module.c
+        #        src/event/modules/ngx_select_module.c
+        #        src/event/modules/ngx_win32_select_module.c
         src/event/ngx_event.c
         src/event/ngx_event.h
         src/event/ngx_event_accept.c
         src/event/ngx_event_connect.c
         src/event/ngx_event_connect.h
-#        src/event/ngx_event_openssl.c
-#        src/event/ngx_event_openssl.h
-#        src/event/ngx_event_openssl_stapling.c
+        #        src/event/ngx_event_openssl.c
+        #        src/event/ngx_event_openssl.h
+        #        src/event/ngx_event_openssl_stapling.c
         src/event/ngx_event_pipe.c
         src/event/ngx_event_pipe.h
         src/event/ngx_event_posted.c
         src/event/ngx_event_posted.h
         src/event/ngx_event_timer.c
         src/event/ngx_event_timer.h
-#        src/http/modules/perl/ngx_http_perl_module.c
-#        src/http/modules/perl/ngx_http_perl_module.h
+        #        src/http/modules/perl/ngx_http_perl_module.c
+        #        src/http/modules/perl/ngx_http_perl_module.h
         src/http/modules/ngx_http_access_module.c
         src/http/modules/ngx_http_addition_filter_module.c
         src/http/modules/ngx_http_auth_basic_module.c
@@ -124,13 +124,13 @@ add_executable(nginx
         src/http/modules/ngx_http_browser_module.c
         src/http/modules/ngx_http_charset_filter_module.c
         src/http/modules/ngx_http_chunked_filter_module.c
-#        src/http/modules/ngx_http_dav_module.c
-#        src/http/modules/ngx_http_degradation_module.c
+        #        src/http/modules/ngx_http_dav_module.c
+        #        src/http/modules/ngx_http_degradation_module.c
         src/http/modules/ngx_http_empty_gif_module.c
         src/http/modules/ngx_http_fastcgi_module.c
         src/http/modules/ngx_http_flv_module.c
         src/http/modules/ngx_http_geo_module.c
-#        src/http/modules/ngx_http_geoip_module.c
+        #        src/http/modules/ngx_http_geoip_module.c
         src/http/modules/ngx_http_gunzip_filter_module.c
         src/http/modules/ngx_http_gzip_filter_module.c
         src/http/modules/ngx_http_gzip_static_module.c
@@ -147,7 +147,7 @@ add_executable(nginx
         src/http/modules/ngx_http_proxy_module.c
         src/http/modules/ngx_http_random_index_module.c
         src/http/modules/ngx_http_range_filter_module.c
-#        src/http/modules/ngx_http_realip_module.c
+        #        src/http/modules/ngx_http_realip_module.c
         src/http/modules/ngx_http_referer_module.c
         src/http/modules/ngx_http_rewrite_module.c
         src/http/modules/ngx_http_scgi_module.c
@@ -156,10 +156,10 @@ add_executable(nginx
         src/http/modules/ngx_http_split_clients_module.c
         src/http/modules/ngx_http_ssi_filter_module.c
         src/http/modules/ngx_http_ssi_filter_module.h
-#        src/http/modules/ngx_http_ssl_module.c
-#        src/http/modules/ngx_http_ssl_module.h
+        #        src/http/modules/ngx_http_ssl_module.c
+        #        src/http/modules/ngx_http_ssl_module.h
         src/http/modules/ngx_http_static_module.c
-#        src/http/modules/ngx_http_stub_status_module.c
+        #        src/http/modules/ngx_http_stub_status_module.c
         src/http/modules/ngx_http_sub_filter_module.c
         src/http/modules/ngx_http_upstream_hash_module.c
         src/http/modules/ngx_http_upstream_ip_hash_module.c
@@ -168,15 +168,15 @@ add_executable(nginx
         src/http/modules/ngx_http_upstream_zone_module.c
         src/http/modules/ngx_http_userid_filter_module.c
         src/http/modules/ngx_http_uwsgi_module.c
-#        src/http/modules/ngx_http_xslt_filter_module.c
-#        src/http/v2/ngx_http_v2.c
-#        src/http/v2/ngx_http_v2.h
-#        src/http/v2/ngx_http_v2_filter_module.c
-#        src/http/v2/ngx_http_v2_huff_decode.c
-#        src/http/v2/ngx_http_v2_huff_encode.c
-#        src/http/v2/ngx_http_v2_module.c
-#        src/http/v2/ngx_http_v2_module.h
-#        src/http/v2/ngx_http_v2_table.c
+        #        src/http/modules/ngx_http_xslt_filter_module.c
+        #        src/http/v2/ngx_http_v2.c
+        #        src/http/v2/ngx_http_v2.h
+        #        src/http/v2/ngx_http_v2_filter_module.c
+        #        src/http/v2/ngx_http_v2_huff_decode.c
+        #        src/http/v2/ngx_http_v2_huff_encode.c
+        #        src/http/v2/ngx_http_v2_module.c
+        #        src/http/v2/ngx_http_v2_module.h
+        #        src/http/v2/ngx_http_v2_table.c
         src/http/ngx_http.c
         src/http/ngx_http.h
         src/http/ngx_http_cache.h
@@ -217,10 +217,10 @@ add_executable(nginx
         src/mail/ngx_mail_smtp_handler.c
         src/mail/ngx_mail_smtp_module.c
         src/mail/ngx_mail_smtp_module.h
-#        src/mail/ngx_mail_ssl_module.c
-#        src/mail/ngx_mail_ssl_module.h
-#        src/misc/ngx_cpp_test_module.cpp
-#        src/misc/ngx_google_perftools_module.c
+        #        src/mail/ngx_mail_ssl_module.c
+        #        src/mail/ngx_mail_ssl_module.h
+        #        src/misc/ngx_cpp_test_module.cpp
+        #        src/misc/ngx_google_perftools_module.c
         src/os/unix/ngx_alloc.c
         src/os/unix/ngx_alloc.h
         src/os/unix/ngx_atomic.h
@@ -235,22 +235,22 @@ add_executable(nginx
         src/os/unix/ngx_dlopen.h
         src/os/unix/ngx_errno.c
         src/os/unix/ngx_errno.h
-#        src/os/unix/ngx_file_aio_read.c
+        #        src/os/unix/ngx_file_aio_read.c
         src/os/unix/ngx_files.c
         src/os/unix/ngx_files.h
-#        src/os/unix/ngx_freebsd.h
-#        src/os/unix/ngx_freebsd_config.h
-#        src/os/unix/ngx_freebsd_init.c
-#        src/os/unix/ngx_freebsd_sendfile_chain.c
+        #        src/os/unix/ngx_freebsd.h
+        #        src/os/unix/ngx_freebsd_config.h
+        #        src/os/unix/ngx_freebsd_init.c
+        #        src/os/unix/ngx_freebsd_sendfile_chain.c
         src/os/unix/ngx_gcc_atomic_amd64.h
         src/os/unix/ngx_gcc_atomic_ppc.h
         src/os/unix/ngx_gcc_atomic_sparc64.h
         src/os/unix/ngx_gcc_atomic_x86.h
-#        src/os/unix/ngx_linux.h
-#        src/os/unix/ngx_linux_aio_read.c
-#        src/os/unix/ngx_linux_config.h
-#        src/os/unix/ngx_linux_init.c
-#        src/os/unix/ngx_linux_sendfile_chain.c
+        #        src/os/unix/ngx_linux.h
+        #        src/os/unix/ngx_linux_aio_read.c
+        #        src/os/unix/ngx_linux_config.h
+        #        src/os/unix/ngx_linux_init.c
+        #        src/os/unix/ngx_linux_sendfile_chain.c
         src/os/unix/ngx_os.h
         src/os/unix/ngx_posix_config.h
         src/os/unix/ngx_posix_init.c
@@ -269,15 +269,15 @@ add_executable(nginx
         src/os/unix/ngx_shmem.h
         src/os/unix/ngx_socket.c
         src/os/unix/ngx_socket.h
-#        src/os/unix/ngx_solaris.h
-#        src/os/unix/ngx_solaris_config.h
-#        src/os/unix/ngx_solaris_init.c
-#        src/os/unix/ngx_solaris_sendfilev_chain.c
+        #        src/os/unix/ngx_solaris.h
+        #        src/os/unix/ngx_solaris_config.h
+        #        src/os/unix/ngx_solaris_init.c
+        #        src/os/unix/ngx_solaris_sendfilev_chain.c
         src/os/unix/ngx_sunpro_atomic_sparc64.h
         src/os/unix/ngx_thread.h
-#        src/os/unix/ngx_thread_cond.c
-#        src/os/unix/ngx_thread_id.c
-#        src/os/unix/ngx_thread_mutex.c
+        #        src/os/unix/ngx_thread_cond.c
+        #        src/os/unix/ngx_thread_id.c
+        #        src/os/unix/ngx_thread_mutex.c
         src/os/unix/ngx_time.c
         src/os/unix/ngx_time.h
         src/os/unix/ngx_udp_recv.c
@@ -291,7 +291,7 @@ add_executable(nginx
         src/stream/ngx_stream_access_module.c
         src/stream/ngx_stream_core_module.c
         src/stream/ngx_stream_geo_module.c
-#        src/stream/ngx_stream_geoip_module.c
+        #        src/stream/ngx_stream_geoip_module.c
         src/stream/ngx_stream_handler.c
         src/stream/ngx_stream_limit_conn_module.c
         src/stream/ngx_stream_log_module.c
@@ -302,8 +302,8 @@ add_executable(nginx
         src/stream/ngx_stream_script.c
         src/stream/ngx_stream_script.h
         src/stream/ngx_stream_split_clients_module.c
-#        src/stream/ngx_stream_ssl_module.c
-#        src/stream/ngx_stream_ssl_module.h
+        #        src/stream/ngx_stream_ssl_module.c
+        #        src/stream/ngx_stream_ssl_module.h
         src/stream/ngx_stream_ssl_preread_module.c
         src/stream/ngx_stream_upstream.c
         src/stream/ngx_stream_upstream.h
@@ -311,10 +311,13 @@ add_executable(nginx
         src/stream/ngx_stream_upstream_least_conn_module.c
         src/stream/ngx_stream_upstream_round_robin.c
         src/stream/ngx_stream_upstream_round_robin.h
-#        src/stream/ngx_stream_upstream_zone_module.c
+        #        src/stream/ngx_stream_upstream_zone_module.c
         src/stream/ngx_stream_variables.c
         src/stream/ngx_stream_variables.h
-        src/stream/ngx_stream_write_filter_module.c)
+        src/stream/ngx_stream_write_filter_module.c
+
+        test/ngx_dev_test.c
+        )
 
 if (APPLE)
     include_directories(/usr/lib /usr/local/lib)

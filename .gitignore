@@ -2,3 +2,4 @@
 run/logs/
 run/*_temp/
 cmake-build-debug
+.DS_Store
