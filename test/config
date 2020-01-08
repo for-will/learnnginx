@@ -1,0 +1,6 @@
+ngx_addon_name=lngx_test_module
+ngx_module_type=HTTP
+ngx_module_name=lngx_test_module
+ngx_module_srcs="$ngx_addon_dir/ngx_dev_test.c"
+#ngx_module_incs=""
+. auto/module

@@ -12,6 +12,7 @@ typedef struct lngx_test_conf_s {
     ngx_flag_t enabled;
 } lngx_test_conf_t;
 
+//配置指令
 static ngx_command_t lngx_test_cmds[] = {
     {
         ngx_string("lgnx_test"),
@@ -30,6 +31,7 @@ static void *create_loc_conf(ngx_conf_t *cf) {
     return c;
 }
 
+//业务逻辑
 static ngx_int_t handler(ngx_http_request_t *r) {
     lngx_test_conf_t *cf = (lngx_test_conf_t *) ngx_http_get_module_loc_conf(r, lngx_test_module);
 
@@ -43,6 +45,7 @@ static ngx_int_t handler(ngx_http_request_t *r) {
     return NGX_DECLINED;
 }
 
+//框架注册
 static ngx_int_t init(ngx_conf_t *cf) {
     ngx_http_core_main_conf_t *cmcf = ngx_http_conf_get_module_main_conf(cf, ngx_http_core_module);
     ngx_array_t *arr = &cmcf->phases[NGX_HTTP_REWRITE_PHASE].handlers;
@@ -51,6 +54,7 @@ static ngx_int_t init(ngx_conf_t *cf) {
     return NGX_OK;
 }
 
+//模块集成
 static ngx_http_module_t lngx_test_ctx = {
     NULL,
     init,
