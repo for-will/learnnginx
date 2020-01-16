@@ -1,4 +1,4 @@
-#define NGX_CONFIGURE " --with-debug --add-module=test --prefix=run"
+#define NGX_CONFIGURE " --with-debug --add-module=lngx/echo --prefix=run"
 
 #ifndef NGX_DEBUG
 #define NGX_DEBUG  1

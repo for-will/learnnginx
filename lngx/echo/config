@@ -1,0 +1,5 @@
+ngx_addon_name=lngx_echo_module
+ngx_module_type=HTTP
+ngx_module_name=lngx_echo_module
+ngx_module_src="$ngx_addon_dir/lngx_mod_echo.cpp"
+. auto/module

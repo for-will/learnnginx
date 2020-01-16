@@ -222,7 +222,6 @@ objs/nginx:	objs/src/core/nginx.o \
 	objs/src/http/modules/ngx_http_upstream_least_conn_module.o \
 	objs/src/http/modules/ngx_http_upstream_keepalive_module.o \
 	objs/src/http/modules/ngx_http_upstream_zone_module.o \
-	objs/addon/test/ngx_dev_test.o \
 	objs/ngx_modules.o
 
 	$(LINK) -o objs/nginx \
@@ -341,7 +340,6 @@ objs/nginx:	objs/src/core/nginx.o \
 	objs/src/http/modules/ngx_http_upstream_least_conn_module.o \
 	objs/src/http/modules/ngx_http_upstream_keepalive_module.o \
 	objs/src/http/modules/ngx_http_upstream_zone_module.o \
-	objs/addon/test/ngx_dev_test.o \
 	objs/ngx_modules.o \
 	-lpcre -lz
 	
@@ -1159,13 +1157,6 @@ objs/src/http/modules/ngx_http_upstream_zone_module.o:	$(CORE_DEPS) $(HTTP_DEPS)
 	$(CC) -c $(CFLAGS) $(CORE_INCS) $(HTTP_INCS) \
 		-o objs/src/http/modules/ngx_http_upstream_zone_module.o \
 		src/http/modules/ngx_http_upstream_zone_module.c
-
-
-objs/addon/test/ngx_dev_test.o:	$(ADDON_DEPS) \
-	test/ngx_dev_test.c
-	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
-		-o objs/addon/test/ngx_dev_test.o \
-		test/ngx_dev_test.c
 
 
 manpage:	objs/nginx.8

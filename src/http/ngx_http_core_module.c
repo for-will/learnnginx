@@ -2945,7 +2945,7 @@ ngx_http_core_server(ngx_conf_t *cf, ngx_command_t *cmd, void *dummy)
                 return NGX_CONF_ERROR;
             }
 
-            ctx->srv_conf[cf->cycle->modules[i]->ctx_index] = mconf;
+            ctx->srv_conf[cf->cycle->modules[i]->ctx_index] = mconf;//? ctx->srv_conf[module->ctx_index] = mconf;
         }
 
         if (module->create_loc_conf) {

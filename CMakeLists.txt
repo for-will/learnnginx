@@ -317,6 +317,7 @@ add_executable(nginx
         src/stream/ngx_stream_write_filter_module.c
 
         test/ngx_dev_test.c
+        lngx/echo/lngx_mod_echo.c
         )
 
 if (APPLE)
@@ -329,3 +330,5 @@ if (APPLE)
     message("pcre_library = ${pcre_library}")
     target_link_libraries(nginx ${zlib_library} ${gd_library} ${pcre_library})
 endif ()
+
+add_executable(test test/main.cpp)
